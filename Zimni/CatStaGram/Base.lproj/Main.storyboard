@@ -52,8 +52,8 @@
                                     <constraint firstAttribute="height" constant="54" id="AXG-KN-tfi"/>
                                 </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="로그인"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="로그인"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <real key="value" value="5"/>
@@ -147,12 +147,87 @@
                     </view>
                     <navigationItem key="navigationItem" id="pnx-bF-W8w"/>
                     <connections>
-                        <outlet property="registerButton" destination="uSJ-gh-vdE" id="0Sk-Sp-CDK"/>
+                        <outlet property="loginButton" destination="yAE-PZ-mOb" id="VQc-Mi-XWb"/>
+                        <outlet property="registerButton" destination="yAE-PZ-mOb" id="L63-6V-CbC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="928.98550724637687" y="79.6875"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="aP6-nh-XEN">
+            <objects>
+                <viewController id="9On-Kz-Czu" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="I1g-MA-ssW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jrb-Tx-w44">
+                                <rect key="frame" x="169.5" y="433" width="75.5" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="KVR-fq-Oug"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="jrb-Tx-w44" firstAttribute="centerX" secondItem="I1g-MA-ssW" secondAttribute="centerX" id="ics-oA-pCU"/>
+                            <constraint firstItem="jrb-Tx-w44" firstAttribute="centerY" secondItem="I1g-MA-ssW" secondAttribute="centerY" id="pHw-ce-UEu"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Profile" id="yYJ-kx-F2C"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VTc-8O-C0C" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1671" y="1489"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="DkZ-lF-cn8">
+            <objects>
+                <viewController id="6fQ-AN-AYW" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="a2U-WI-3HY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vjS-sd-e2p">
+                                <rect key="frame" x="172.5" y="433" width="69.5" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Rrp-TN-pQ7"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vjS-sd-e2p" firstAttribute="centerX" secondItem="a2U-WI-3HY" secondAttribute="centerX" id="2OT-P3-qYA"/>
+                            <constraint firstItem="vjS-sd-e2p" firstAttribute="centerY" secondItem="a2U-WI-3HY" secondAttribute="centerY" id="5Lc-Ty-N18"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home" id="qvm-3v-m2H"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cqz-ba-7OV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="229" y="1489"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="xXi-a4-95Y">
+            <objects>
+                <tabBarController storyboardIdentifier="TabBarVC" id="rIK-1m-ff6" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2Mm-AC-XYT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="6fQ-AN-AYW" kind="relationship" relationship="viewControllers" id="yXw-t0-AG3"/>
+                        <segue destination="9On-Kz-Czu" kind="relationship" relationship="viewControllers" id="EJb-hV-Eex"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dQy-Ai-CbP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="929" y="764"/>
         </scene>
         <!--Register View Controller-->
         <scene sceneID="lLo-0c-BAX">
@@ -253,6 +328,9 @@
                                         <real key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="registerButtonDidtap:" destination="6fG-x9-lHk" eventType="touchUpInside" id="aT5-yC-6F9"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OI7-oy-0ma">
                                 <rect key="frame" x="10" y="810.5" width="394" height="1"/>

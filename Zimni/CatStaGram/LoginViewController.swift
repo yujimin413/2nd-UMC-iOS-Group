@@ -12,14 +12,14 @@ class LoginViewController: UIViewController {
     // 아래에서 text 값 받아왔으므로 controller에서 받아야 함
     var email = String()
     var password = String()
+    var userInfo: UserInfo? // UnserInfo 구조체를 optional로 선언
     @IBOutlet weak var registerButton: UIButton!
+    @IBOutlet weak var loginButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupAttribute()
-        
-        
-        
+
     }
     
     
@@ -28,15 +28,32 @@ class LoginViewController: UIViewController {
         // 값이 있을 수도 없을 수도 있음
         // ?? "" 붙여서 해결
         let text = sender.text ?? ""
+        self.loginButton.backgroundColor
+        = text.isValidEmail() ? .facebookColor : .disabledButtonColor
         self.email = text
     }
     
     @IBAction func passwordTextFieldEditingChanged(_ sender: UITextField) {
         let text = sender.text ?? ""
+        
+        self.loginButton.backgroundColor
+        = text.count > 2 ? .facebookColor : .disabledButtonColor
+        
         self.password = text
     }
     
     @IBAction func loginButtonDidTap(_ sender: UIButton) {
+        // 회원가입정보를 전달받아서, 그것과 textField 데이터가 일치하면,
+        // 로그인이 되어야 한다.
+        guard let userInfo = self.userInfo else { return }  // optional을 해지하는 새로운 방법
+        if userInfo.email == self.email
+            && userInfo.password == self.password {
+            let vc = storyboard?.instantiateViewController(withIdentifier: "TabBarVC") as! UITabBarController
+            vc.modalPresentationStyle = .fullScreen
+            self.present(vc, animated: true, completion: nil)
+        } else {
+     
+        }
     }
     
     @IBAction func registerButtonDidTap(_ sender: UIButton) {
@@ -61,6 +78,14 @@ class LoginViewController: UIViewController {
         // navigationController의 push -> 화면전환 가로로 나타나게 함
         // main에서 navigationController 생성 후 사용
         self.navigationController?.pushViewController(registerViewController, animated: true)
+        
+        // ARC (swift에서 처리하는 메모리 관리 방법 중 하나)
+        // weak self 써주면 강한 참조에서 약한 참조로 바뀜
+        // ARC -> 강한참조 / 약한참조 -> ARC 낮춰줌 (강한참조의 경우 메모리 해제해도 남아있어 메모리 낭비 )
+        registerViewController.userInfo = { [weak self] (userInfo) in
+            self?.userInfo = userInfo
+            
+        }
         
         
     }
