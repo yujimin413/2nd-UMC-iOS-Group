@@ -261,8 +261,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" id="qvm-3v-m2H"/>
                     <connections>
-                        <outlet property="TableView" destination="241-GQ-PCv" id="grG-qx-qw2"/>
-                        <outlet property="tableView" destination="241-GQ-PCv" id="F9f-n0-LjJ"/>
+                        <outlet property="tableView" destination="241-GQ-PCv" id="dFs-XT-Kbs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cqz-ba-7OV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

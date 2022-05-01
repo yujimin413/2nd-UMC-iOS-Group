@@ -40,14 +40,14 @@ class FeedTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        imageViewUserProfile.layer.cornerRadius = 12.5
+        imageViewUserProfile.layer.cornerRadius = 10.5
         imageViewUserProfile.clipsToBounds = true
-        imageViewMyProfile.layer.cornerRadius = 12.5
+        imageViewMyProfile.layer.cornerRadius = 10.5
         imageViewMyProfile.clipsToBounds = true
         
         let fontSize = UIFont.boldSystemFont(ofSize: 9)
         let attributedStr = NSMutableAttributedString(string: labelFeed.text ?? "")
-        attributedStr.addAttribute(.font, value: fontSize, range: NSRange.init(location: 0, length: 3))
+        attributedStr.addAttribute(.font, value: fontSize, range: NSRange.init(location: 0, length: 5))
         
         labelFeed.attributedText = attributedStr
     }

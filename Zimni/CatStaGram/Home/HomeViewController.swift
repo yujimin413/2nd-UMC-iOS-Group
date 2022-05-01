@@ -18,9 +18,7 @@ class HomeViewController: UIViewController {
         
         tableView.delegate = self
         tableView.dataSource = self
-//        tableView.separatorStyle = .none
-//        let feedNib = UINib(nibName: "FeedTableViewCell", bundle: nil)
-//        tableView.register(feedNib, forCellReuseIdentifier: "FeedTableViewCell")
+        tableView.separatorStyle = .none
         let feedNib = UINib(nibName: "FeedTableViewCell", bundle: nil)
         tableView.register(feedNib, forCellReuseIdentifier: "FeedTableViewCell")
         
@@ -37,9 +35,12 @@ extension HomeViewController : UITableViewDelegate, UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "FeedTableViewCell", for: indexPath) as? FeedTableViewCell else {
             return UITableViewCell()
         }
+        cell.selectionStyle = .none
         return cell
-
         }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 600
+    }
 
     
 }
