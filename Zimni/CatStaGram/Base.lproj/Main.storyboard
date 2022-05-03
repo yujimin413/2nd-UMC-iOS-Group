@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gRM-DI-Y4M">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rIK-1m-ff6">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
@@ -186,7 +186,7 @@
         <!--Home-->
         <scene sceneID="DkZ-lF-cn8">
             <objects>
-                <viewController id="6fQ-AN-AYW" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeViewController" id="6fQ-AN-AYW" customClass="HomeViewController" customModule="CatStaGram" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="a2U-WI-3HY">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -238,21 +238,31 @@
                                     <constraint firstAttribute="bottom" secondItem="wc8-gT-52z" secondAttribute="bottom" constant="-5" id="QZP-a5-nOc"/>
                                     <constraint firstItem="nDd-FD-rZg" firstAttribute="centerY" secondItem="zvT-2e-AGM" secondAttribute="centerY" id="Vp6-nk-e4X"/>
                                     <constraint firstAttribute="trailing" secondItem="cJY-Rm-kuC" secondAttribute="trailing" constant="15" id="eBV-w0-Nwp"/>
-                                    <constraint firstItem="wc8-gT-52z" firstAttribute="centerY" secondItem="zvT-2e-AGM" secondAttribute="centerY" id="eUP-Ev-sHb"/>
                                     <constraint firstItem="wc8-gT-52z" firstAttribute="leading" secondItem="zvT-2e-AGM" secondAttribute="leading" constant="15" id="uI7-lR-zm2"/>
                                     <constraint firstAttribute="height" constant="50" id="w7q-r1-AAI"/>
                                 </constraints>
                             </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="241-GQ-PCv">
+                                <rect key="frame" x="0.0" y="94" width="414" height="719"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Rrp-TN-pQ7"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="zvT-2e-AGM" firstAttribute="leading" secondItem="Rrp-TN-pQ7" secondAttribute="leading" id="3kv-nL-Eu4"/>
+                            <constraint firstItem="241-GQ-PCv" firstAttribute="leading" secondItem="Rrp-TN-pQ7" secondAttribute="leading" id="9rC-Vh-JhN"/>
+                            <constraint firstItem="241-GQ-PCv" firstAttribute="top" secondItem="zvT-2e-AGM" secondAttribute="bottom" id="HWa-yQ-wNs"/>
                             <constraint firstItem="zvT-2e-AGM" firstAttribute="top" secondItem="Rrp-TN-pQ7" secondAttribute="top" id="al9-eU-DsA"/>
+                            <constraint firstItem="Rrp-TN-pQ7" firstAttribute="bottom" secondItem="241-GQ-PCv" secondAttribute="bottom" id="b9W-uq-pfN"/>
                             <constraint firstItem="Rrp-TN-pQ7" firstAttribute="trailing" secondItem="zvT-2e-AGM" secondAttribute="trailing" id="fI9-yv-bf8"/>
+                            <constraint firstItem="Rrp-TN-pQ7" firstAttribute="trailing" secondItem="241-GQ-PCv" secondAttribute="trailing" id="llT-EA-bXT"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" id="qvm-3v-m2H"/>
+                    <connections>
+                        <outlet property="tableView" destination="241-GQ-PCv" id="dFs-XT-Kbs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cqz-ba-7OV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
