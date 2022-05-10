@@ -33,14 +33,15 @@ class ProfileCollectionViewCell: UICollectionViewCell {
         profileImageView.layer.cornerRadius = 88 / 2
         addProfileImageView.layer.cornerRadius = 24 / 2
         
+        profileImageView.layer.borderColor = UIColor.darkGray.cgColor
+        profileImageView.layer.borderWidth = 1
+        
         editButton.layer.cornerRadius = 5
-        editButton.layer.borderColor =
-            UIColor.lightGray.cgColor
+        editButton.layer.borderColor = UIColor.lightGray.cgColor
         editButton.layer.borderWidth = 1
         
         addFriendButton.layer.cornerRadius = 3
-        addFriendButton.layer.borderColor =
-            UIColor.lightGray.cgColor
+        addFriendButton.layer.borderColor = UIColor.lightGray.cgColor
         addFriendButton.layer.borderWidth = 1
         
         [postingCountLabel, followerCountLabel, followingCountLabel]

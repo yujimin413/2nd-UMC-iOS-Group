@@ -18,6 +18,8 @@
 		29713545282AB89B00E5DCA4 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29713544282AB89B00E5DCA4 /* ProfileViewController.swift */; };
 		29713549282ABB9100E5DCA4 /* ProfileCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29713547282ABB9100E5DCA4 /* ProfileCollectionViewCell.swift */; };
 		2971354A282ABB9100E5DCA4 /* ProfileCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29713548282ABB9100E5DCA4 /* ProfileCollectionViewCell.xib */; };
+		29713552282ACE8600E5DCA4 /* PostCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29713550282ACE8600E5DCA4 /* PostCollectionViewCell.swift */; };
+		29713553282ACE8600E5DCA4 /* PostCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29713551282ACE8600E5DCA4 /* PostCollectionViewCell.xib */; };
 		29950260281DB4EB00A27E2A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2995025F281DB4EB00A27E2A /* HomeViewController.swift */; };
 		29950264281DB7AA00A27E2A /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29950262281DB7AA00A27E2A /* FeedTableViewCell.swift */; };
 		29950265281DB7AA00A27E2A /* FeedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29950263281DB7AA00A27E2A /* FeedTableViewCell.xib */; };
@@ -45,6 +47,8 @@
 		29713544282AB89B00E5DCA4 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		29713547282ABB9100E5DCA4 /* ProfileCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCollectionViewCell.swift; sourceTree = "<group>"; };
 		29713548282ABB9100E5DCA4 /* ProfileCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileCollectionViewCell.xib; sourceTree = "<group>"; };
+		29713550282ACE8600E5DCA4 /* PostCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCollectionViewCell.swift; sourceTree = "<group>"; };
+		29713551282ACE8600E5DCA4 /* PostCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostCollectionViewCell.xib; sourceTree = "<group>"; };
 		2995025F281DB4EB00A27E2A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		29950262281DB7AA00A27E2A /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
 		29950263281DB7AA00A27E2A /* FeedTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedTableViewCell.xib; sourceTree = "<group>"; };
@@ -119,10 +123,28 @@
 		29713546282ABB6000E5DCA4 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				2971354D282ACE4100E5DCA4 /* ProfileCell */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		2971354D282ACE4100E5DCA4 /* ProfileCell */ = {
+			isa = PBXGroup;
+			children = (
+				2971354F282ACE6800E5DCA4 /* PostCell */,
 				29713547282ABB9100E5DCA4 /* ProfileCollectionViewCell.swift */,
 				29713548282ABB9100E5DCA4 /* ProfileCollectionViewCell.xib */,
 			);
-			path = Cell;
+			path = ProfileCell;
+			sourceTree = "<group>";
+		};
+		2971354F282ACE6800E5DCA4 /* PostCell */ = {
+			isa = PBXGroup;
+			children = (
+				29713550282ACE8600E5DCA4 /* PostCollectionViewCell.swift */,
+				29713551282ACE8600E5DCA4 /* PostCollectionViewCell.xib */,
+			);
+			path = PostCell;
 			sourceTree = "<group>";
 		};
 		2995025E281DB4C800A27E2A /* Home */ = {
@@ -205,6 +227,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29713553282ACE8600E5DCA4 /* PostCollectionViewCell.xib in Resources */,
 				2931003327F5BF250049A025 /* LaunchScreen.storyboard in Resources */,
 				29950265281DB7AA00A27E2A /* FeedTableViewCell.xib in Resources */,
 				2931003027F5BF250049A025 /* Assets.xcassets in Resources */,
@@ -226,6 +249,7 @@
 				295585D427F8E50A00D01705 /* LoginViewController.swift in Sources */,
 				29D75C5527FA3512008F37B4 /* UIView+Extension.swift in Sources */,
 				29D75C5327FA3294008F37B4 /* Color+Extension.swift in Sources */,
+				29713552282ACE8600E5DCA4 /* PostCollectionViewCell.swift in Sources */,
 				29713549282ABB9100E5DCA4 /* ProfileCollectionViewCell.swift in Sources */,
 				295585D627F8EB8600D01705 /* RegisterViewController.swift in Sources */,
 				29950260281DB4EB00A27E2A /* HomeViewController.swift in Sources */,
