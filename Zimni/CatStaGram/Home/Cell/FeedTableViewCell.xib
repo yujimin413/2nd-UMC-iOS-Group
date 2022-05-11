@@ -76,14 +76,14 @@
                             <constraint firstAttribute="width" constant="25" id="dgr-Ym-LXj"/>
                         </constraints>
                     </imageView>
-                    <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lx4-DN-7Yn">
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lx4-DN-7Yn">
                         <rect key="frame" x="10" y="396" width="17" height="17"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="17" id="6dn-uC-ao5"/>
                             <constraint firstAttribute="width" constant="17" id="i6g-YG-biq"/>
                         </constraints>
                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                        <state key="normal" title="Button" image="ic_home_heart"/>
+                        <state key="normal" image="ic_home_heart"/>
                         <state key="selected" image="ic_home_heart_full"/>
                         <connections>
                             <action selector="actionIsHeart:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="RO1-2a-S7n"/>
@@ -107,14 +107,14 @@
                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                         <state key="normal" title="Button" image="ic_home_send"/>
                     </button>
-                    <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C4r-Zk-pMg">
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C4r-Zk-pMg">
                         <rect key="frame" x="308" y="396" width="17" height="17"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="17" id="UYQ-o2-pm6"/>
                             <constraint firstAttribute="width" constant="17" id="o4p-Md-pt0"/>
                         </constraints>
                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                        <state key="normal" title="Button" image="ic_bookmark_white"/>
+                        <state key="normal" image="ic_bookmark_white"/>
                         <state key="selected" image="ic_bookmark_black"/>
                         <connections>
                             <action selector="actionBookMark:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="6dQ-bB-YpB"/>

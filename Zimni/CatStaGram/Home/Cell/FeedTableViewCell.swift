@@ -19,23 +19,19 @@ class FeedTableViewCell: UITableViewCell {
     
     
     @IBAction func actionIsHeart(_ sender: Any) {
-        if buttonIsHeart.isSelected {
             if buttonIsHeart.isSelected {
                 buttonIsHeart.isSelected = false
             } else {
                 buttonIsHeart.isSelected = true
             }
         }
-    }
     @IBAction func actionBookMark(_ sender: Any) {
-        if buttonIsBookMark.isSelected {
             if buttonIsBookMark.isSelected {
                 buttonIsBookMark.isSelected = false
             } else {
                 buttonIsBookMark.isSelected = true
             }
         }
-    }
     
     override func awakeFromNib() {
         super.awakeFromNib()
