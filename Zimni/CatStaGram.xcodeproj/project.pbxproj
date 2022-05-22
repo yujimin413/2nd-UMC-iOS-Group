@@ -19,6 +19,8 @@
 		293E7E87283AA62D00DC22AA /* FeedUploadInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293E7E86283AA62D00DC22AA /* FeedUploadInput.swift */; };
 		293E7E89283AA69200DC22AA /* FeedUploadModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293E7E88283AA69200DC22AA /* FeedUploadModel.swift */; };
 		293E7E8B283AA72100DC22AA /* FeedUploadDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293E7E8A283AA72100DC22AA /* FeedUploadDataManager.swift */; };
+		293E7E92283AAF3C00DC22AA /* UserFeedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293E7E91283AAF3C00DC22AA /* UserFeedModel.swift */; };
+		293E7E94283AB23F00DC22AA /* UserFeedDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293E7E93283AB23F00DC22AA /* UserFeedDataManager.swift */; };
 		295585D427F8E50A00D01705 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295585D327F8E50A00D01705 /* LoginViewController.swift */; };
 		295585D627F8EB8600D01705 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295585D527F8EB8600D01705 /* RegisterViewController.swift */; };
 		29713545282AB89B00E5DCA4 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29713544282AB89B00E5DCA4 /* ProfileViewController.swift */; };
@@ -34,7 +36,7 @@
 		29B5E381281F27F1006FB266 /* StoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B5E37F281F27F1006FB266 /* StoryCollectionViewCell.swift */; };
 		29B5E382281F27F1006FB266 /* StoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29B5E380281F27F1006FB266 /* StoryCollectionViewCell.xib */; };
 		29C8CD53281D83DA00AB8008 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C8CD52281D83DA00AB8008 /* UserInfo.swift */; };
-		29D75C5327FA3294008F37B4 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D75C5227FA3294008F37B4 /* Color+Extension.swift */; };
+		29D75C5327FA3294008F37B4 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D75C5227FA3294008F37B4 /* UIColor+Extension.swift */; };
 		29D75C5527FA3512008F37B4 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D75C5427FA3512008F37B4 /* UIView+Extension.swift */; };
 		29D75C5727FA35AF008F37B4 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D75C5627FA35AF008F37B4 /* UIViewController+Extension.swift */; };
 		56E18032F5296CF00E1EE0D2 /* Pods_CatStaGram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9F97EA10AD3EA9852EE732B /* Pods_CatStaGram.framework */; };
@@ -55,6 +57,8 @@
 		293E7E86283AA62D00DC22AA /* FeedUploadInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedUploadInput.swift; sourceTree = "<group>"; };
 		293E7E88283AA69200DC22AA /* FeedUploadModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedUploadModel.swift; sourceTree = "<group>"; };
 		293E7E8A283AA72100DC22AA /* FeedUploadDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedUploadDataManager.swift; sourceTree = "<group>"; };
+		293E7E91283AAF3C00DC22AA /* UserFeedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFeedModel.swift; sourceTree = "<group>"; };
+		293E7E93283AB23F00DC22AA /* UserFeedDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFeedDataManager.swift; sourceTree = "<group>"; };
 		295585D327F8E50A00D01705 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		295585D527F8EB8600D01705 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		29713544282AB89B00E5DCA4 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
@@ -70,7 +74,7 @@
 		29B5E37F281F27F1006FB266 /* StoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		29B5E380281F27F1006FB266 /* StoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoryCollectionViewCell.xib; sourceTree = "<group>"; };
 		29C8CD52281D83DA00AB8008 /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
-		29D75C5227FA3294008F37B4 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		29D75C5227FA3294008F37B4 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		29D75C5427FA3512008F37B4 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		29D75C5627FA35AF008F37B4 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		358B5618A42A38DDBD5B8196 /* Pods-CatStaGram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatStaGram.release.xcconfig"; path = "Target Support Files/Pods-CatStaGram/Pods-CatStaGram.release.xcconfig"; sourceTree = "<group>"; };
@@ -112,15 +116,11 @@
 		2931002527F5BF240049A025 /* CatStaGram */ = {
 			isa = PBXGroup;
 			children = (
-				2995025E281DB4C800A27E2A /* Home */,
-				2931002627F5BF240049A025 /* AppDelegate.swift */,
-				29D75C5227FA3294008F37B4 /* Color+Extension.swift */,
-				29713543282AB86600E5DCA4 /* Profile */,
-				2931002827F5BF240049A025 /* SceneDelegate.swift */,
+				293E7E8D283AACBB00DC22AA /* App */,
+				293E7E8F283AACFA00DC22AA /* UserInterface */,
+				29D75C5227FA3294008F37B4 /* UIColor+Extension.swift */,
 				2931002A27F5BF240049A025 /* ViewController.swift */,
 				2931002C27F5BF240049A025 /* Main.storyboard */,
-				295585D327F8E50A00D01705 /* LoginViewController.swift */,
-				295585D527F8EB8600D01705 /* RegisterViewController.swift */,
 				2931002F27F5BF250049A025 /* Assets.xcassets */,
 				2931003127F5BF250049A025 /* LaunchScreen.storyboard */,
 				2931003427F5BF250049A025 /* Info.plist */,
@@ -150,9 +150,47 @@
 			path = FeedUploadDataManager;
 			sourceTree = "<group>";
 		};
+		293E7E8D283AACBB00DC22AA /* App */ = {
+			isa = PBXGroup;
+			children = (
+				2931002627F5BF240049A025 /* AppDelegate.swift */,
+				2931002827F5BF240049A025 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		293E7E8E283AACD800DC22AA /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				295585D327F8E50A00D01705 /* LoginViewController.swift */,
+				295585D527F8EB8600D01705 /* RegisterViewController.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		293E7E8F283AACFA00DC22AA /* UserInterface */ = {
+			isa = PBXGroup;
+			children = (
+				2995025E281DB4C800A27E2A /* Home */,
+				29713543282AB86600E5DCA4 /* Profile */,
+				293E7E8E283AACD800DC22AA /* Authentication */,
+			);
+			path = UserInterface;
+			sourceTree = "<group>";
+		};
+		293E7E90283AAF0F00DC22AA /* UserFeedDataManager */ = {
+			isa = PBXGroup;
+			children = (
+				293E7E91283AAF3C00DC22AA /* UserFeedModel.swift */,
+				293E7E93283AB23F00DC22AA /* UserFeedDataManager.swift */,
+			);
+			path = UserFeedDataManager;
+			sourceTree = "<group>";
+		};
 		29713543282AB86600E5DCA4 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				293E7E90283AAF0F00DC22AA /* UserFeedDataManager */,
 				29713546282ABB6000E5DCA4 /* Cell */,
 				29713544282AB89B00E5DCA4 /* ProfileViewController.swift */,
 			);
@@ -162,6 +200,7 @@
 		29713546282ABB6000E5DCA4 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				2971354F282ACE6800E5DCA4 /* PostCell */,
 				2971354D282ACE4100E5DCA4 /* ProfileCell */,
 			);
 			path = Cell;
@@ -170,7 +209,6 @@
 		2971354D282ACE4100E5DCA4 /* ProfileCell */ = {
 			isa = PBXGroup;
 			children = (
-				2971354F282ACE6800E5DCA4 /* PostCell */,
 				29713547282ABB9100E5DCA4 /* ProfileCollectionViewCell.swift */,
 				29713548282ABB9100E5DCA4 /* ProfileCollectionViewCell.xib */,
 			);
@@ -351,9 +389,10 @@
 				293E7E82283A971800DC22AA /* FeedModel.swift in Sources */,
 				293E7E80283A96CA00DC22AA /* FeedAPIInput.swift in Sources */,
 				293E7E84283A975000DC22AA /* FeedDataManager.swift in Sources */,
+				293E7E92283AAF3C00DC22AA /* UserFeedModel.swift in Sources */,
 				295585D427F8E50A00D01705 /* LoginViewController.swift in Sources */,
 				29D75C5527FA3512008F37B4 /* UIView+Extension.swift in Sources */,
-				29D75C5327FA3294008F37B4 /* Color+Extension.swift in Sources */,
+				29D75C5327FA3294008F37B4 /* UIColor+Extension.swift in Sources */,
 				29713552282ACE8600E5DCA4 /* PostCollectionViewCell.swift in Sources */,
 				29713549282ABB9100E5DCA4 /* ProfileCollectionViewCell.swift in Sources */,
 				293E7E87283AA62D00DC22AA /* FeedUploadInput.swift in Sources */,
@@ -366,6 +405,7 @@
 				293E7E89283AA69200DC22AA /* FeedUploadModel.swift in Sources */,
 				29C8CD53281D83DA00AB8008 /* UserInfo.swift in Sources */,
 				2931002927F5BF240049A025 /* SceneDelegate.swift in Sources */,
+				293E7E94283AB23F00DC22AA /* UserFeedDataManager.swift in Sources */,
 				29713545282AB89B00E5DCA4 /* ProfileViewController.swift in Sources */,
 				29950264281DB7AA00A27E2A /* FeedTableViewCell.swift in Sources */,
 				29B5E37D281F2368006FB266 /* StoryTableViewCell.swift in Sources */,

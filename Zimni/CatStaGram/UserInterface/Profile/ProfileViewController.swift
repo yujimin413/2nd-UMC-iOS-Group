@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ProfileViewViewController: UIViewController {
+class ProfileViewController: UIViewController {
     // MARK: - Properties
     @IBOutlet weak var profileCollectionView: UICollectionView!
     
@@ -15,6 +15,10 @@ class ProfileViewViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupCollectionView()
+        
+        /* TEST */
+        UserFeedDataManager().getUserFeed(self)
+        /* ---- */
     }
     
     // MARK: - Actions
@@ -41,7 +45,7 @@ class ProfileViewViewController: UIViewController {
 }
 
 // MARK: - UICollectionViewDelegate, UICollectionViewDataSource
-extension ProfileViewViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+extension ProfileViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     // 섹션의 개수
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 2
@@ -76,7 +80,7 @@ extension ProfileViewViewController: UICollectionViewDelegate, UICollectionViewD
     }
 }
 
-extension ProfileViewViewController: UICollectionViewDelegateFlowLayout {
+extension ProfileViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout:
                         UICollectionViewLayout,
                         sizeForItemAt indexPath: IndexPath) -> CGSize {

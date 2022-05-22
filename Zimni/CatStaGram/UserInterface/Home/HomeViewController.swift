@@ -29,6 +29,7 @@ class HomeViewController: UIViewController {
         // Do any additional setup after loading the view.
         let input = FeedAPIInput(limit: 10, page: 0)
         FeedDataManager().feedDataManager(input, self)
+       // FeedDataManager().feedDataManager(self, input)
         
         imagePickerViewController.delegate = self
     }
