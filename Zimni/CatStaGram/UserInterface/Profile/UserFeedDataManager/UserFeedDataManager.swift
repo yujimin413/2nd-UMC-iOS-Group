@@ -20,7 +20,8 @@ class UserFeedDataManager {
                 
             switch response.result {
             case .success(let result):
-                print("DEBUG: ", result)
+                // print("DEBUG: ", result)
+                viewController.successFeedAPI(result)
             case .failure(let error):
                 print(error.localizedDescription)   //error 원인 알아보기 위해
             }
