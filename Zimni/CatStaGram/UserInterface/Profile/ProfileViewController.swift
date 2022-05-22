@@ -7,13 +7,15 @@
 
 import UIKit
 
-class ProfileViewController: UIViewController {
+class ProfileViewController: UIViewController, UIGestureRecognizerDelegate {
     // MARK: - Properties
     @IBOutlet weak var profileCollectionView: UICollectionView!
     
     var userPosts: [GetUserPosts]? {
         didSet { self.profileCollectionView.reloadData() }
     }
+    
+    var deletedIndex: Int?
     
     // MARK: - Lifecycle
     override func viewDidLoad() {
@@ -27,6 +29,24 @@ class ProfileViewController: UIViewController {
     }
     
     // MARK: - Actions
+    @objc
+    func didLongPressCell(gestureRecognizer: UILongPressGestureRecognizer) {
+        if gestureRecognizer.state != .began { return }
+        
+        let position = gestureRecognizer.location(in: profileCollectionView)
+        
+        if let indexPath = profileCollectionView?.indexPathForItem(at: position) {
+            print("DEBUG: ", indexPath.item)
+            
+            guard let userPosts = self.userPosts else { return }
+            let cellData = userPosts[indexPath.item]
+            self.deletedIndex = indexPath.item
+            if let postIdx = cellData.postIdx {
+                // 삭제 API를 호출
+                UserFeedDataManager().deleteUserFeed(self, postIdx)
+            }
+        }
+    }
     
     // MARK: - Helpers
     private func setupCollectionView() {
@@ -46,6 +66,14 @@ class ProfileViewController: UIViewController {
                 nibName: "PostCollectionViewCell",
                 bundle: nil),
             forCellWithReuseIdentifier: PostCollectionViewCell.identifier)
+        
+        let gesture = UILongPressGestureRecognizer(
+            target: self,
+            action: #selector(didLongPressCell(gestureRecognizer:)))
+        gesture.minimumPressDuration = 0.66
+        gesture.delegate = self
+        gesture.delaysTouchesBegan = true
+        profileCollectionView.addGestureRecognizer(gesture)
     }
     
     private func setupData() {
@@ -140,6 +168,14 @@ extension ProfileViewController: UICollectionViewDelegateFlowLayout {
 extension ProfileViewController {
     func successFeedAPI(_ result: UserFeedModel) {
         self.userPosts = result.result?.getUserPosts
+    }
+    
+    func successDeletePostAPI(_ isSuccess: Bool) {
+        guard isSuccess else { return }
+        
+        if let deletedIndex = self.deletedIndex {
+            self.userPosts?.remove(at: deletedIndex)
+        }
     }
 }
 
