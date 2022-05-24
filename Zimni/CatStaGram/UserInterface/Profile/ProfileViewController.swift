@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ProfileViewController: UIViewController, UIGestureRecognizerDelegate {
+class ProfileViewViewController: UIViewController, UIGestureRecognizerDelegate {
     // MARK: - Properties
     @IBOutlet weak var profileCollectionView: UICollectionView!
     
@@ -82,7 +82,7 @@ class ProfileViewController: UIViewController, UIGestureRecognizerDelegate {
 }
 
 // MARK: - UICollectionViewDelegate, UICollectionViewDataSource
-extension ProfileViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+extension ProfileViewViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     // 섹션의 개수
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 2
@@ -123,7 +123,7 @@ extension ProfileViewController: UICollectionViewDelegate, UICollectionViewDataS
     }
 }
 
-extension ProfileViewController: UICollectionViewDelegateFlowLayout {
+extension ProfileViewViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout:
                         UICollectionViewLayout,
                         sizeForItemAt indexPath: IndexPath) -> CGSize {
@@ -165,7 +165,7 @@ extension ProfileViewController: UICollectionViewDelegateFlowLayout {
 }
 
 // MARK: - API 통신 메소드
-extension ProfileViewController {
+extension ProfileViewViewController {
     func successFeedAPI(_ result: UserFeedModel) {
         self.userPosts = result.result?.getUserPosts
     }

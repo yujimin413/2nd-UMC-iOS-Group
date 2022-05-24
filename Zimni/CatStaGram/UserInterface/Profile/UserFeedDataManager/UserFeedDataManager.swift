@@ -9,7 +9,7 @@ import Alamofire
 
 class UserFeedDataManager {
     // MARK: 유저 피드 조회 API
-    func getUserFeed(_ viewController: ProfileViewController,
+    func getUserFeed(_ viewController: ProfileViewViewController,
                      _ userID: Int = 2) {
         // 통신
         AF.request("https://edu-api-ios-test.softsquared.com/users/\(userID)",
@@ -29,7 +29,7 @@ class UserFeedDataManager {
     }
     
     // MARK: 게시물 삭제 API
-    func deleteUserFeed(_ viewController: ProfileViewController,
+    func deleteUserFeed(_ viewController: ProfileViewViewController,
                      _ postIdx: Int) {
         // 통신
         AF.request("https://edu-api-ios-test.softsquared.com/posts/\(postIdx)/status",
