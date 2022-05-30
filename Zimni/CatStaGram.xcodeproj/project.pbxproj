@@ -29,11 +29,11 @@
 		2971354A282ABB9100E5DCA4 /* ProfileCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29713548282ABB9100E5DCA4 /* ProfileCollectionViewCell.xib */; };
 		29713552282ACE8600E5DCA4 /* PostCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29713550282ACE8600E5DCA4 /* PostCollectionViewCell.swift */; };
 		29713553282ACE8600E5DCA4 /* PostCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29713551282ACE8600E5DCA4 /* PostCollectionViewCell.xib */; };
+		2974A57D2844350B0060DC4D /* ReelsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2974A57C2844350B0060DC4D /* ReelsCell.swift */; };
+		2974A57F2844371A0060DC4D /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2974A57E2844371A0060DC4D /* VideoPlayerView.swift */; };
 		29950260281DB4EB00A27E2A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2995025F281DB4EB00A27E2A /* HomeViewController.swift */; };
 		29950264281DB7AA00A27E2A /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29950262281DB7AA00A27E2A /* FeedTableViewCell.swift */; };
 		29950265281DB7AA00A27E2A /* FeedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29950263281DB7AA00A27E2A /* FeedTableViewCell.xib */; };
-		299DCA6A28442E6E0028F9EF /* ReelsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299DCA6828442E6E0028F9EF /* ReelsCollectionViewCell.swift */; };
-		299DCA6B28442E6E0028F9EF /* ReelsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 299DCA6928442E6E0028F9EF /* ReelsCollectionViewCell.xib */; };
 		29B5E37D281F2368006FB266 /* StoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B5E37B281F2368006FB266 /* StoryTableViewCell.swift */; };
 		29B5E37E281F2368006FB266 /* StoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29B5E37C281F2368006FB266 /* StoryTableViewCell.xib */; };
 		29B5E381281F27F1006FB266 /* StoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B5E37F281F27F1006FB266 /* StoryCollectionViewCell.swift */; };
@@ -71,11 +71,11 @@
 		29713548282ABB9100E5DCA4 /* ProfileCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileCollectionViewCell.xib; sourceTree = "<group>"; };
 		29713550282ACE8600E5DCA4 /* PostCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCollectionViewCell.swift; sourceTree = "<group>"; };
 		29713551282ACE8600E5DCA4 /* PostCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostCollectionViewCell.xib; sourceTree = "<group>"; };
+		2974A57C2844350B0060DC4D /* ReelsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelsCell.swift; sourceTree = "<group>"; };
+		2974A57E2844371A0060DC4D /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
 		2995025F281DB4EB00A27E2A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		29950262281DB7AA00A27E2A /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
 		29950263281DB7AA00A27E2A /* FeedTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedTableViewCell.xib; sourceTree = "<group>"; };
-		299DCA6828442E6E0028F9EF /* ReelsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelsCollectionViewCell.swift; sourceTree = "<group>"; };
-		299DCA6928442E6E0028F9EF /* ReelsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReelsCollectionViewCell.xib; sourceTree = "<group>"; };
 		299DCA6C284433010028F9EF /* dummy video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "dummy video.mp4"; path = "../../../../Downloads/dummy video.mp4"; sourceTree = "<group>"; };
 		299DCA6D284433010028F9EF /* dummy video02.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "dummy video02.mp4"; path = "../../../../Downloads/dummy video02.mp4"; sourceTree = "<group>"; };
 		29B5E37B281F2368006FB266 /* StoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryTableViewCell.swift; sourceTree = "<group>"; };
@@ -132,10 +132,10 @@
 				2931002A27F5BF240049A025 /* ViewController.swift */,
 				2931002C27F5BF240049A025 /* Main.storyboard */,
 				29D2717A28442CC30036B4BC /* ReelsViewController.swift */,
+				2974A57C2844350B0060DC4D /* ReelsCell.swift */,
+				2974A57E2844371A0060DC4D /* VideoPlayerView.swift */,
 				299DCA6C284433010028F9EF /* dummy video.mp4 */,
 				299DCA6D284433010028F9EF /* dummy video02.mp4 */,
-				299DCA6828442E6E0028F9EF /* ReelsCollectionViewCell.swift */,
-				299DCA6928442E6E0028F9EF /* ReelsCollectionViewCell.xib */,
 				2931002F27F5BF250049A025 /* Assets.xcassets */,
 				2931003127F5BF250049A025 /* LaunchScreen.storyboard */,
 				2931003427F5BF250049A025 /* Info.plist */,
@@ -364,7 +364,6 @@
 				2971354A282ABB9100E5DCA4 /* ProfileCollectionViewCell.xib in Resources */,
 				29B5E37E281F2368006FB266 /* StoryTableViewCell.xib in Resources */,
 				29B5E382281F27F1006FB266 /* StoryCollectionViewCell.xib in Resources */,
-				299DCA6B28442E6E0028F9EF /* ReelsCollectionViewCell.xib in Resources */,
 				2931002E27F5BF240049A025 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -430,7 +429,6 @@
 				29713552282ACE8600E5DCA4 /* PostCollectionViewCell.swift in Sources */,
 				29713549282ABB9100E5DCA4 /* ProfileCollectionViewCell.swift in Sources */,
 				293E7E87283AA62D00DC22AA /* FeedUploadInput.swift in Sources */,
-				299DCA6A28442E6E0028F9EF /* ReelsCollectionViewCell.swift in Sources */,
 				295585D627F8EB8600D01705 /* RegisterViewController.swift in Sources */,
 				29950260281DB4EB00A27E2A /* HomeViewController.swift in Sources */,
 				293E7E8B283AA72100DC22AA /* FeedUploadDataManager.swift in Sources */,
@@ -439,7 +437,9 @@
 				29B5E381281F27F1006FB266 /* StoryCollectionViewCell.swift in Sources */,
 				293E7E89283AA69200DC22AA /* FeedUploadModel.swift in Sources */,
 				29C8CD53281D83DA00AB8008 /* UserInfo.swift in Sources */,
+				2974A57D2844350B0060DC4D /* ReelsCell.swift in Sources */,
 				2931002927F5BF240049A025 /* SceneDelegate.swift in Sources */,
+				2974A57F2844371A0060DC4D /* VideoPlayerView.swift in Sources */,
 				293E7E98283AC9CE00DC22AA /* DeleteUserFeed.swift in Sources */,
 				293E7E94283AB23F00DC22AA /* UserFeedDataManager.swift in Sources */,
 				29713545282AB89B00E5DCA4 /* ProfileViewController.swift in Sources */,

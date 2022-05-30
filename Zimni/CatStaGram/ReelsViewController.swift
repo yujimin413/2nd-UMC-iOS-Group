@@ -6,14 +6,13 @@
 //
 
 import UIKit
-import SnapKit
 
 class ReelsViewController: UIViewController {
     // MARK: - Properties
     
     @IBOutlet weak var collectionView: UICollectionView!
     
-    private let videoURLStrARR = ["dummy video", "dummy video02"]
+    private let videoURLStrArr = ["dummy video", "dummy video02"]
     
     
     // MARK: - Lifecycle
@@ -28,9 +27,10 @@ class ReelsViewController: UIViewController {
     private func setupCollectionView() {
         collectionView.delegate = self
         collectionView.dataSource = self
+        
         collectionView.register(
-            UINib(nibName: "ReelsCollectionViewCell", bundle: nil),
-            forCellWithReuseIdentifier: ReelsCollectionViewCell.identifier)
+            ReelsCell.self,
+            forCellWithReuseIdentifier: ReelsCell.identifier)
     }
 
 }
@@ -43,8 +43,9 @@ extension ReelsViewController: UICollectionViewDelegate, UICollectionViewDataSou
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(
-            withReuseIdentifier: ReelsCollectionViewCell.identifier,
-            for: indexPath) as? ReelsCollectionViewCell else { fatalError() }
+            withReuseIdentifier: ReelsCell.identifier,
+            for: indexPath) as? ReelsCell else { return UICollectionViewCell() }
+        cell.setupURL(videoURLStrArr.randomElement()!)
         return cell
     }
     
