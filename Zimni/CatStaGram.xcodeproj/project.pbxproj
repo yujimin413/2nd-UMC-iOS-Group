@@ -24,6 +24,8 @@
 		293E7E98283AC9CE00DC22AA /* DeleteUserFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293E7E97283AC9CE00DC22AA /* DeleteUserFeed.swift */; };
 		295585D427F8E50A00D01705 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295585D327F8E50A00D01705 /* LoginViewController.swift */; };
 		295585D627F8EB8600D01705 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295585D527F8EB8600D01705 /* RegisterViewController.swift */; };
+		2964621D284457A100A177C0 /* dummyvideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2964621A284456F500A177C0 /* dummyvideo.mp4 */; };
+		2964621E284457A100A177C0 /* dummyvideo02.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2964621B284456F500A177C0 /* dummyvideo02.mp4 */; };
 		29713545282AB89B00E5DCA4 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29713544282AB89B00E5DCA4 /* ProfileViewController.swift */; };
 		29713549282ABB9100E5DCA4 /* ProfileCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29713547282ABB9100E5DCA4 /* ProfileCollectionViewCell.swift */; };
 		2971354A282ABB9100E5DCA4 /* ProfileCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29713548282ABB9100E5DCA4 /* ProfileCollectionViewCell.xib */; };
@@ -66,6 +68,8 @@
 		293E7E97283AC9CE00DC22AA /* DeleteUserFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteUserFeed.swift; sourceTree = "<group>"; };
 		295585D327F8E50A00D01705 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		295585D527F8EB8600D01705 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		2964621A284456F500A177C0 /* dummyvideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = dummyvideo.mp4; path = ../../../../Downloads/dummyvideo.mp4; sourceTree = "<group>"; };
+		2964621B284456F500A177C0 /* dummyvideo02.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = dummyvideo02.mp4; path = ../../../../Downloads/dummyvideo02.mp4; sourceTree = "<group>"; };
 		29713544282AB89B00E5DCA4 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		29713547282ABB9100E5DCA4 /* ProfileCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCollectionViewCell.swift; sourceTree = "<group>"; };
 		29713548282ABB9100E5DCA4 /* ProfileCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -76,8 +80,6 @@
 		2995025F281DB4EB00A27E2A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		29950262281DB7AA00A27E2A /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
 		29950263281DB7AA00A27E2A /* FeedTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedTableViewCell.xib; sourceTree = "<group>"; };
-		299DCA6C284433010028F9EF /* dummy video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "dummy video.mp4"; path = "../../../../Downloads/dummy video.mp4"; sourceTree = "<group>"; };
-		299DCA6D284433010028F9EF /* dummy video02.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "dummy video02.mp4"; path = "../../../../Downloads/dummy video02.mp4"; sourceTree = "<group>"; };
 		29B5E37B281F2368006FB266 /* StoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryTableViewCell.swift; sourceTree = "<group>"; };
 		29B5E37C281F2368006FB266 /* StoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoryTableViewCell.xib; sourceTree = "<group>"; };
 		29B5E37F281F27F1006FB266 /* StoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -133,9 +135,9 @@
 				2931002C27F5BF240049A025 /* Main.storyboard */,
 				29D2717A28442CC30036B4BC /* ReelsViewController.swift */,
 				2974A57C2844350B0060DC4D /* ReelsCell.swift */,
+				2964621A284456F500A177C0 /* dummyvideo.mp4 */,
+				2964621B284456F500A177C0 /* dummyvideo02.mp4 */,
 				2974A57E2844371A0060DC4D /* VideoPlayerView.swift */,
-				299DCA6C284433010028F9EF /* dummy video.mp4 */,
-				299DCA6D284433010028F9EF /* dummy video02.mp4 */,
 				2931002F27F5BF250049A025 /* Assets.xcassets */,
 				2931003127F5BF250049A025 /* LaunchScreen.storyboard */,
 				2931003427F5BF250049A025 /* Info.plist */,
@@ -357,6 +359,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2964621D284457A100A177C0 /* dummyvideo.mp4 in Resources */,
+				2964621E284457A100A177C0 /* dummyvideo02.mp4 in Resources */,
 				29713553282ACE8600E5DCA4 /* PostCollectionViewCell.xib in Resources */,
 				2931003327F5BF250049A025 /* LaunchScreen.storyboard in Resources */,
 				29950265281DB7AA00A27E2A /* FeedTableViewCell.xib in Resources */,
