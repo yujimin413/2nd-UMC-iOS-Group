@@ -50,7 +50,7 @@ class ReelsCell: UICollectionViewCell {
         cellTitleLabel.textAlignment = .left
         cellTitleLabel.textColor = .white
 
-        [cameraImageView, shareImageView, likeImageView]
+        [cameraImageView, shareImageView, likeImageView, commentImageView]
             .forEach {
                 $0.contentMode = .scaleAspectFit
                 $0.tintColor = .white
